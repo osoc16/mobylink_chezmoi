@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" prefix="dtx: http://vocab.datex.org/terms# scm: http://www.schema.org">
+  <head>
+    <meta charset="utf-8">
+    <title>Pieter-Jan's Home parking</title>
+    <meta name="description" content="Pieter-Jan's Home parking'">
+    <meta name="author" content="Pieter-Jan Geeroms">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  </head>
+</html>
+<body>
+  <Header>
+    <h1> <a>PJ's Home parking</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </Header>
+  <main>
+    <article typeof="dtx:ParkingRecord">
+      <h2 typeof="dtx:ParkingName">{{data.name}}</h2>
+      <p typeof="">{{data.address}}</p>
+      <p typeof="dtx:ParkingLocation">{{data.city}}</p>
+      <p typeof="">{{data.telephone}}</p>
+      <p typeof="dtx:parkingDescription">{{data.description}}</p>
+      <p typeof="dtx:ParkingLocation">{{data.longitude}}</p>
+      <p typeof="dtx:ParkingLocation">{{data.latitude}}</p>
+      <p>
+        spaces: <span typeof="dtx:parkingOccupancy">{{data.occupied}}</span>
+        /
+        <span typeof="dtx:parkingOccupancy">{{data.maxSpace}}</span>
+      </p>
+    </article>
+  </main>
+  <footer><span>No &copy; cuz this is OpenData!</span></footer>
+</body>
