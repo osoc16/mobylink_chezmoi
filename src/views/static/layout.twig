@@ -15,20 +15,20 @@
     <h1> <a>PJ's Home parking</a></h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="{{ app.request.baseUrl }}">Home</a></li>
       </ul>
     </nav>
   </Header>
   <main>
-    <article typeof="dtx:parkingSite">
-      <h2 typeof="dtx:parkingName">{{data.name}}</h2>
-      <p typeof="dtx:parkingSiteAddress">{{data.address}}</p>
-      <p typeof="dtx:ParkingLocation">{{data.city}}</p>
-      <p typeof="dtx:contactDetailsTelephoneNumber">{{data.telephone}}</p>
-      <p typeof="dtx:parkingDescription">{{data.description}}</p>
-      <p typeof="dtx:longitude">{{data.longitude}}</p>
-      <p typeof="dtx:latitude">{{data.latitude}}</p>
-      <p>spaces: <span typeof="dtx:parkingSpaceOccupied">{{data.occupied}}</span>/<span typeof="dtx:parkingSpace">{{data.maxSpace}}</span></p>
+    <article typeof="dtx:ParkingSite" resource="{{app.request.baseUrl}}#parking">
+      <h2 property="dtx:parkingName">{{data.name}}</h2>
+      <p property="dtx:parkingSiteAddress">{{data.address}}</p>
+      <p property="dtx:ParkingLocation">{{data.city}}</p>
+      <p property="dtx:contactDetailsTelephoneNumber">{{data.telephone}}</p>
+      <p property="dtx:parkingDescription">{{data.description}}</p>
+      <p property="dtx:longitude">{{data.longitude}}</p>
+      <p property="dtx:latitude">{{data.latitude}}</p>
+      <p>spaces: <span property="dtx:parkingSpaceOccupied">{{data.occupied}}</span>/<span property="dtx:totalCapacity">{{data.maxSpace}}</span></p>
     </article>
   </main>
   <footer><span>No &copy; cuz this is OpenData!</span></footer>
