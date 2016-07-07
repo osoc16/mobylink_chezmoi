@@ -81,6 +81,10 @@ main {
     main article p {
       line-height: 20px;
       font-size: 16px; }
+    main article img {
+      margin: 20px auto;
+      display: block; }
 
 footer {
+  margin-top: 50px;
   text-align: center; }

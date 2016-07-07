@@ -26,8 +26,8 @@
       <p property="dtx:ParkingLocation">{{data.city}}</p>
       <p property="dtx:contactDetailsTelephoneNumber">{{data.telephone}}</p>
       <p property="dtx:parkingDescription">{{data.description}}</p>
-      <p property="dtx:longitude">{{data.longitude}}</p>
-      <p property="dtx:latitude">{{data.latitude}}</p>
+      <img src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=600x300&maptype=roadmap&markers=color:red|{{data.latitude}},{{data.longitude}}&key=AIzaSyA8Tawxe7x2cpGiTpvOh35xHe8dUZsjsFg" alt="{{data.description}}">
+      <!-- todo: different api key? -->
       <p>spaces: <span property="dtx:parkingSpaceOccupied">{{data.occupied}}</span>/<span property="dtx:totalCapacity">{{data.maxSpace}}</span></p>
     </article>
   </main>

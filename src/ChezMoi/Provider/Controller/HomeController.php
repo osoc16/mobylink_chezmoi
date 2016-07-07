@@ -28,8 +28,8 @@ class HomeController implements ControllerProviderInterface {
         'description' => 'This is Pj\'s awesome parking space!',
         'maxSpace' => 3,
         'occupied' => $occupied,
-        'longitude' => 51,
-        'latitude' => 15
+        'longitude' => 3.709925,
+        'latitude' => 51.037051
       );
 
       return $app['twig']->render('static/layout.twig', array(
