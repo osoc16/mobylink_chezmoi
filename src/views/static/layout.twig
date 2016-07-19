@@ -23,7 +23,7 @@
     <article typeof="dtx:ParkingSite" resource="{{app.request.baseUrl}}#parking">
       <h2 property="dtx:parkingName">{{data.name}}</h2>
       <p property="dtx:parkingSiteAddress">{{data.address}}</p>
-      <p property="dtx:ParkingLocation">{{data.city}}</p>
+      <p property="dtx:parkingLocation">{{data.city}}</p>
       <p property="dtx:contactDetailsTelephoneNumber">{{data.telephone}}</p>
       <p property="dtx:parkingDescription">{{data.description}}</p>
       <img src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=600x300&maptype=roadmap&markers=color:red|{{data.latitude}},{{data.longitude}}&key=AIzaSyA8Tawxe7x2cpGiTpvOh35xHe8dUZsjsFg" alt="{{data.description}}">
